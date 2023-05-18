@@ -1,4 +1,3 @@
-
 # Decoding zip compressed, base64 encoded message ::
 ## ./json_base64_decode.py
 Decoding zip compressed, base64 encoded message...Done
@@ -26,3 +25,21 @@ Decoding zip compressed, base64 encoded message...Done
 #### Total FOO_EVENT count is : 11
 #### [{'IP': '99.88.77.66', 'count': 4}, {'IP': '22.33.44.55', 'count': 2}, {'IP': '123.156.123.156', 'count': 3}, {'IP': '44.55.66.77', 'count': 2}]
 #### ================================================================================
+
+# ===================================
+# Decoding gzip compressed, base64 encoded CSV data ::
+## myPython % ./csv_base64_decode.py
+--- Raw Data after decoding zip compressed base64 data ---
+b'"name","position","start date","salary"\n"Paul Smith","Lead Analys","Mon, 02 Jan 2006","173,000"\n"Lisa Wilkinson","Director, Information Technology","Mon, 02 Jan 2006","385,000"\n"Ryan Elliot","Custodian","Mon, 02 Jan 2006","89,000"\n"Kendra Chin","QA Engineer","Mon, 02 Jan 2006","156,000"\n'
+
+#### ================================S O L U T I O N================================
+#### Parsing CSV data: for following condition
+#### ●   Find the Highest earner and print the details of the highest earner. 
+#### ●   Find the Average salary from the salary datae.
+#### ================================================================================
+#### Salary list is : [89000, 156000, 173000, 385000]
+#### Highest salary is : 385000
+#### Highest salary of $385000 is earned by : Lisa Wilkinson,Director, Information Technology,Mon, 02 Jan 2006,385,000
+#### The Average salary eared is $200750.0
+
+#### ==================================The END===================================
