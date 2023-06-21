@@ -1,0 +1,37 @@
+{
+  "Items" : [
+  {
+    "tenantID" : 1,
+    "tenantName" : "TEST1",
+    "tenantState" : "ACTIVE"
+  },
+  {
+    "tenantID" : 2,
+    "tenantName" : "TEST2",
+    "tenantState" : "ACTIVE"
+  },
+  {
+    "tenantID" : 3,
+    "tenantName" : "TEST3",
+    "tenantState" : "DELETED"
+  }
+  ],
+  "Items1" : [
+  {
+    "tenantID" : 4,
+    "tenantName" : "TEST4",
+    "tenantState" : "ACTIVE"
+  },
+  {
+    "tenantID" : 5,
+    "tenantName" : "TEST5",
+    "tenantState" : "DELETED"
+  },
+  {
+    "tenantID" : 6,
+    "tenantName" : "TEST6",
+    "tenantState" : "ACTIVE"
+  }
+  ]
+}
+
