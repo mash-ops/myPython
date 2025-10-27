@@ -3,7 +3,7 @@
 # Purpose    : Get list of OneView server profile and write output to screen and file (/tmp/oneview.output)
 # How to use : execute this python script from command line (python and program_Name)
 # Hint       : pip install hpeOneView (10.2.0) in venv, as of Sep 2025, tested on Python 3.12.1
-#
+# Refer API  : https://support.hpe.com/docs/display/public/dp00003271en_us/index.html#rest/server-profiles
 
 import getpass, requests, sys, importlib.util, os
 from urllib3.exceptions import InsecureRequestWarning
