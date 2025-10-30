@@ -1,5 +1,5 @@
 #! ~/venv/bin/python
-# Author     : Manjesh.munegowda@stanfordchildrens.org
+# Author     : Manjeshtm@gmail.com
 # Purpose    : List all Nodes in SolarWinds using solarwind api, display output in tabular format
 # How to use : python programName <Solarwinds UserName>
 
@@ -24,7 +24,7 @@ else:
 # Suppress the warnings from urllib3
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 #user = getpass.getuser()    #Get the current logged in user
-user = "lpch\\" + str(sys.argv[1])
+user = "yourAD\\" + str(sys.argv[1])
 #secret = str(sys.argv[2])
 #print(user)
 #print(secret)
@@ -36,7 +36,7 @@ except Exception as error:
     print('ERROR', error)
 #else:
     
-hostName = 'psrpsolrapp02'
+hostName = 'yourSolarWindsServer'
 swqlQuery = """SELECT IPAddress, DNS, SysName, Vendor, MachineType FROM Orion.Nodes Order by MachineType"""
 swis = SwisClient(hostName, user, secret, verify=False)
 
